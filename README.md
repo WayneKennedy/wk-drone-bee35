@@ -69,3 +69,9 @@ cost of a machine that is safe to fly near people and survives contact.
 - Never commit an untested config without marking it as such.
 - Link decisions in `docs/decisions.md` from wherever they are referenced.
 - Blackbox logs, firmware binaries and large STL archives are gitignored.
+
+## Licence
+
+[MIT](LICENSE), covering everything here that is mine. Not run as an open-source
+project, but nothing restricts reuse if it is useful to you. Third-party STLs in
+`print/stl/` keep their upstream licences, listed in [`print/sources.md`](print/sources.md).

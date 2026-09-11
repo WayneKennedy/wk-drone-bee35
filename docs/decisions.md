@@ -35,5 +35,5 @@ reasoning, not just the outcome. Format: `DEC-nn — decision (date)`.
   once the basic goal is met and the flight envelope is predictable does the
   aircraft become a fleet node reachable from the wk-robotics mission-planning
   tier, which needs ArduPilot: a native ROS 2 interface (AP_DDS) and two-way
-  MAVLink, neither of which iNav has (its MAVLink is transmit-only). The hardware
+  MAVLink, neither of which iNav has (its MAVLink is telemetry out and RC in only). The hardware
   supports both; the reflash is the whole cost. Resolves OQ-01.

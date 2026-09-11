@@ -37,5 +37,5 @@ SpeedyBee Bee35 Pro frame. See [`README.md`](README.md) for intent and status.
 - **Config discipline.** Every `config/diff/` file is `YYYY-MM-DD-description.txt`
   with a matching line in `docs/tuning.md`. An untested config is marked untested.
 - **Measured beats plausible.** Performance figures carry the date and conditions.
-- **This repo is private.** It may hold prices and supplier detail; it must not hold
-  credentials.
+- **This repo is public.** No credentials, host names, network addresses or tailnet
+  identifiers. Prices and suppliers are fine.

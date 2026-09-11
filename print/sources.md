@@ -1,7 +1,9 @@
 # Printed parts
 
 Upstream sources and licences for every STL. Local copies of what was actually
-printed go in [`stl/`](stl/). Licences are TBC until checked at each source.
+printed go in [`stl/`](stl/). Licences are TBC until checked at each source. This repo is public and MIT-licensed;
+only commit an upstream STL to `stl/` if its licence permits redistribution, and
+record that licence here.
 
 ## SpeedyBee official Bee35 files
 
