@@ -9,7 +9,7 @@ reasoning, not just the outcome. Format: `DEC-nn — decision (date)`.
   commonality with the existing 5" quad, a familiar configurator, and an easier
   tune. Hardware is identical either way, so ArduPilot remains a reflash away if
   iNav's hold disappoints. **Under review:** see
-  [OQ-01](open-questions.md), the Mission Planner / aerial-robot requirement.
+  [OQ-01](open-questions.md), the aerial-robot / mission-planner requirement.
 
 - **DEC-02 — Bee35 Pro over standard Bee35** (2026-09-11). Not a preference: the
   standard version was out of stock. Turned out favourable. The alloy heatsink has

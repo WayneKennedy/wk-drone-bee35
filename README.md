@@ -14,8 +14,8 @@ hardware.
 Every value marked TBC is unconfirmed until hardware arrives.
 
 Intended role: an aerial robot in the [wk-robotics](https://github.com/WayneKennedy/wk-robotics)
-fleet, reachable from Mission Planner. Firmware choice is under review because of
-this; see [OQ-01](docs/open-questions.md).
+family, reachable from its mission-planning tier. Firmware choice is under review
+because of this; see [OQ-01](docs/open-questions.md).
 
 ## Design intent
 
@@ -49,6 +49,8 @@ Flight time is materially less than an uncaged build would give. The cage is the
 cost of a machine that is safe to fly near people and survives contact.
 
 ## Where things live
+
+- [`AGENTS.md`](AGENTS.md) — onboarding for any assistant or contributor
 
 - [`docs/bom.md`](docs/bom.md) — bill of materials, suppliers, order dates
 - [`docs/wiring.md`](docs/wiring.md) — port map, solder notes, jumper settings

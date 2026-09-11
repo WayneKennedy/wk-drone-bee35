@@ -3,19 +3,26 @@
 Pending decisions. Resolved items move to [`decisions.md`](decisions.md) as a DEC.
 Format: `OQ-nn — question (date raised)`.
 
-- **OQ-01 — Aerial robot: Mission Planner reachability vs iNav** (2026-09-11).
-  The aircraft is to be treated as an aerial robot reachable from Mission Planner,
-  in the same sense as the ground robots in wk-robotics. Mission Planner is a
-  MAVLink ground station. iNav's MAVLink implementation is transmit-only per the
-  iNav telemetry docs: Mission Planner can display iNav telemetry but cannot upload
-  missions, change parameters or command the aircraft. Full two-way control needs
-  ArduPilot, which reverses DEC-01. The hardware supports either; the MicoAir743
-  V2 ships with ArduPilot preloaded. Options:
-  1. ArduPilot: full Mission Planner integration and EKF3 Loiter, at the cost of
-     firmware commonality with the 5" quad and a harder tune.
-  2. iNav with MAVLink telemetry out: Mission Planner as a read-only feed; missions
-     and params stay in iNav Configurator.
-  3. iNav now, ArduPilot later if the robot use case grows.
+- **OQ-01 — Aerial robot: how the fleet mission planner reaches it, and what that
+  means for firmware** (2026-09-11). The aircraft is to be treated as an aerial robot
+  in the wk-robotics family, reachable from the mission planner. In that family
+  "Mission Planning" is the aspirational off-robot third tier above reflex and intent
+  (wk-robotics `docs/common.md`, `docs/ideas.md`), speaking ROS 2 over the
+  [topic contract](https://github.com/WayneKennedy/wk-robotics/blob/main/docs/common.md#the-topic-contract).
+  It may also mean ArduPilot's Mission Planner ground station. Either reading
+  favours ArduPilot and conflicts with DEC-01:
+  - **ArduPilot** has a native ROS 2 interface (AP_DDS, micro-ROS XRCE-DDS over
+    serial or UDP, ArduPilot 4.5+) and full two-way MAVLink, so Mission Planner and
+    a ROS 2 mission tier can both command it. The MicoAir743 V2 ships with it.
+  - **iNav** has no ROS 2 interface. Its MAVLink implementation is transmit-only per
+    the iNav telemetry docs: a ground station can display telemetry but cannot
+    upload missions, change parameters or command the aircraft.
+  - A third path, iNav now and ArduPilot when the fleet role is real, keeps DEC-01's
+    commonality with the 5" quad for the maiden and tune.
 
-  Decide once hardware is in hand and iNav's POSHOLD has been evaluated. Until
-  then the scaffold and [`setup-inav.md`](setup-inav.md) stay on iNav.
+  Also unlike every other robot in the family, the flight controller is reflex and
+  intent tier in one MCU; there is no on-board Pi. How it joins the topic contract
+  is part of this question.
+
+  Decide once hardware is in hand. Until then the scaffold and
+  [`setup-inav.md`](setup-inav.md) stay on iNav.
