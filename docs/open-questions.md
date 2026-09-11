@@ -4,7 +4,11 @@ Pending decisions. Resolved items move to [`decisions.md`](decisions.md) as a DE
 Format: `OQ-nn — question (date raised)`.
 
 - **OQ-01 — Aerial robot: how the fleet mission planner reaches it, and what that
-  means for firmware** (2026-09-11). The aircraft is to be treated as an aerial robot
+  means for firmware** (2026-09-11). **Resolved 2026-09-11 by
+  [DEC-06](decisions.md): iNav first, ArduPilot as a later evolution.** The
+  analysis is kept below for when that step is taken.
+
+  Original question: The aircraft is to be treated as an aerial robot
   in the wk-robotics family, reachable from the mission planner. In that family
   "Mission Planning" is the aspirational off-robot third tier above reflex and intent
   (wk-robotics `docs/common.md`, `docs/ideas.md`), speaking ROS 2 over the
@@ -24,5 +28,3 @@ Format: `OQ-nn — question (date raised)`.
   intent tier in one MCU; there is no on-board Pi. How it joins the topic contract
   is part of this question.
 
-  Decide once hardware is in hand. Until then the scaffold and
-  [`setup-inav.md`](setup-inav.md) stay on iNav.

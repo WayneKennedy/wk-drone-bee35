@@ -14,8 +14,8 @@ hardware.
 Every value marked TBC is unconfirmed until hardware arrives.
 
 Intended role: an aerial robot in the [wk-robotics](https://github.com/WayneKennedy/wk-robotics)
-family, reachable from its mission-planning tier. Firmware choice is under review
-because of this; see [OQ-01](docs/open-questions.md).
+family, eventually reachable from its mission-planning tier. That step comes after
+the basic goal is met on iNav; see [DEC-06](docs/decisions.md).
 
 ## Design intent
 
