@@ -13,6 +13,10 @@ hardware.
 **Parts ordered, not yet in hand.** Nothing has been built, flashed or flown.
 Every value marked TBC is unconfirmed until hardware arrives.
 
+Intended role: an aerial robot in the [wk-robotics](https://github.com/WayneKennedy/wk-robotics)
+fleet, reachable from Mission Planner. Firmware choice is under review because of
+this; see [OQ-01](docs/open-questions.md).
+
 ## Design intent
 
 Reference behaviour is a DJI Neo: level hover, solid position hold, predictable
@@ -50,6 +54,7 @@ cost of a machine that is safe to fly near people and survives contact.
 - [`docs/wiring.md`](docs/wiring.md) — port map, solder notes, jumper settings
 - [`docs/setup-inav.md`](docs/setup-inav.md) — first flash through maiden checklist
 - [`docs/decisions.md`](docs/decisions.md) — architecture decision records
+- [`docs/open-questions.md`](docs/open-questions.md) — pending decisions
 - [`docs/tuning.md`](docs/tuning.md) — PID and filter changes, with rationale
 - [`config/`](config/README.md) — iNav `diff all` and `dump all` snapshots, and how to restore
 - [`print/sources.md`](print/sources.md) — upstream URLs and licences for every STL
