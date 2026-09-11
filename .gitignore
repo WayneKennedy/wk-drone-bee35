@@ -1,0 +1,25 @@
+# Blackbox logs (large)
+logs/*
+!logs/.gitkeep
+
+# Firmware binaries
+*.hex
+*.bin
+*.dfu
+
+# Large STL archives
+*.zip
+*.7z
+*.rar
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local agent/tool state
+.claude/settings.local.json
+
+# Scratch
+scratch/
