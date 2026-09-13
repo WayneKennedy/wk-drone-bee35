@@ -30,7 +30,9 @@ Format: `OQ-nn — question (date raised)`.
   is part of this question.
 
 - **OQ-02 — Radio link for the mission-planning step: ELRS MAVLink mode or a third
-  radio** (2026-09-11). When DEC-06's ArduPilot step is taken, Mission Planner and the
+  radio** (2026-09-11). Dormant since [DEC-07](decisions.md): the fleet-node step is not
+  planned for this airframe. Kept because the analysis applies to any aircraft in the
+  fleet taking the off-board intent topology. When DEC-06's ArduPilot step is taken, Mission Planner and the
   ground-side ROS 2 bridge need a two-way MAVLink link. The aircraft carries two
   radios already: ELRS 2.4 GHz for RC and Walksnail Avatar for video. Walksnail is
   video only as far as known; not verified. Options:

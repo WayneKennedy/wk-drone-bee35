@@ -37,3 +37,14 @@ reasoning, not just the outcome. Format: `DEC-nn — decision (date)`.
   tier, which needs ArduPilot: a native ROS 2 interface (AP_DDS) and two-way
   MAVLink, neither of which iNav has (its MAVLink is telemetry out and RC in only). The hardware
   supports both; the reflash is the whole cost. Resolves OQ-01.
+
+- **DEC-07 — An FPV aircraft, not a family robot** (2026-09-13, owner). The goal is a
+  DIY Walksnail/ELRS aircraft with a DJI-like hands-off FPV experience, and it stops
+  there. Two reasons: the 153 mm ducted frame has no room for an intent-tier computer,
+  and the wk-robotics criterion for an aerial robot (`docs/common.md`, *Aircraft and the
+  tiers*) is that an intent tier commands the flight controller, which nothing here does
+  or will. The fleet's aerial-robot candidate is the Holybro 10" (`../../holybro-10/`),
+  bought to carry a Pi or Jetson wired to its flight controller. DEC-06 stands as written:
+  the ArduPilot reflash remains available, and the off-board intent topology in the same
+  `common.md` section means this airframe could still become a fleet node without any
+  onboard change. It is not planned. OQ-02 applies only if this is revisited.

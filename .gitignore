@@ -1,6 +1,6 @@
 # Blackbox logs (large)
-logs/*
-!logs/.gitkeep
+aircraft/*/logs/*
+!aircraft/*/logs/.gitkeep
 
 # Firmware binaries
 *.hex
